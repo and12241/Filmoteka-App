@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Filmoteka</title>
+</head>
+<body>
+    <header>
+    <nav class="nav-site">
+        <div class="high-nav">
+            <a href="" class="logo-site link"><img src="/images/film.svg" alt="">Filmoteka</a>
+            <ul class="btn-list">
+                <li class="list"><a href="" class="link-main link current">HOME</a></li>
+            </ul>
+        </div>
+            <div class="input-container">
+                <input type="text" placeholder="Movie search" class="input-find">
+                <button class="btn-find"><img src="/images/search-icon.svg" alt=""></button>    
+            </div>
+            <div class="genres-container">
+                <button class="btn-random">Рандом тайтл</button>
+                <div class="container">
+                    <button
+                      class="button"
+                      aria-expanded="false"
+                      aria-controls="list"
+                    >
+                      Жанр
+                    </button>
+                
+                    <ul class="menu" id="list" aria-hidden="true">
+                      <li class="menu-item">
+                        <a href="#" class="menu-link" tabindex="-1">боевик</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#" class="menu-link" tabindex="-1">драма</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#" class="menu-link" tabindex="-1">ужасы</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#" class="menu-link" tabindex="-1">фэнтези</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#" class="menu-link" tabindex="-1">комедия</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#" class="menu-link" tabindex="-1">мелодрама</a>
+                      </li>
+                    </ul>
+                  </div>
+                
+                </div>
+            </div>   
+        </nav>
+</header>
+    <section class="main-section">
+        <div class="backdrop is-hidden">
+            <div class="modal-content is-hidden">
+                <button class="close-modal"><img src="/images/close.svg" alt="" class="modal-img"></button>
+                <img class="modal-images" src="/images/Rectangle 5.jpg" alt="">
+                <div class="text-content-modal">
+                    <h1 class="title-modal" data-title="title">A FISTFUL OF LEAD</h1>
+                    <ul class="modal-list">
+                        <li class="modal-param list">
+                            <p class="param vote" data-vote="Vote">Vote / Votes</p>
+                            <p class = "param-text ratings">7.3 / 1260</p> 
+                        </li>
+                        <li class="modal-param list">
+                            <p class="param orig">Original Title</p>  
+                            <p class = "param-text title-m">A FISTFUL OF LEAD</p>                        
+                        </li>
+                        <li class="modal-param list">
+                            <p class="param">Genre</p>
+                            <p class = "param-text genres">Western</p>                         
+                        </li>
+                    </ul>
+                    <h3 class="title-paragraph">ABOUT</h3>
+                    <p class="descript">Four of the West’s most infamous outlaws assemble to steal a huge stash of gold from the most corrupt settlement of the gold rush towns. But not all goes to plan one is killed and the other three escapes with bags of gold hide out in the abandoned gold mine where they happen across another gang of three – who themselves were planning to hit the very same bank! As tensions rise, things go from bad to worse as they realise the bags of gold are filled with lead... they’ve been double crossed – but by who and how?</p>
+                </div>
+            </div>
+        </div>
+        <div class="film-container">
+        </div>
+        <div class="btn-page">
+            <button class="back-page">Back page</button>
+            <button class="next-page">Next Page</button>
+        </div>
+    </section>
+    <footer class="footer-site">
+        <p>&#169; 2024 | All Rights Reserved | Developed with </p>
+    </footer>
+    <script src="/Js/index.js" type="module"></script>
+</body>
+</html>
+
